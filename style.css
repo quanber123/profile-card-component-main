@@ -1,0 +1,158 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.bg-pattern-top{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translate(-70%, -70%);
+}
+.bg-pattern-bottom{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: translate(70%, 70%);
+}
+
+@media (min-width: 1440px){
+    .bg-pattern-top{
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    .bg-pattern-bottom{
+        position: fixed;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        transform: translate(40%, 50%);
+    }
+}
+.profile-card-age,
+.profile-card-hometown,
+.name-interactions {
+    color: hsl(0, 0%, 59%);
+}
+
+.name-interactions {
+    font-size: 0.8rem;
+}
+
+.profile-card-name,
+.profile-card-age,
+.value-interactions {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.container {
+    background-color: #fff;
+    min-width: 375px;
+    width: 375px;
+    /* border: 1px solid  hsl(227, 10%, 46%); */
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px hsl(229, 23%, 23%);
+}
+
+.profile-card {
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pattern-card {
+    width: 100%;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+}
+
+.victor-avatar {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    margin: -3em auto 0.5em;
+}
+
+.profile-card-basicinfo {
+    display: inline-flex;
+    justify-content: center;
+}
+.profile-card-age{
+    margin-left: .75em;
+}
+
+.profile-card-hometown{
+    margin: -.5em auto 1em;
+}
+.social-interactions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-interactions {
+    margin: 1.5em auto -0.5em; 
+}
+
+.name-interactions {
+    margin-bottom: 1.5em;
+}
